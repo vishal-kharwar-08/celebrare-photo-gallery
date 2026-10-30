@@ -1,102 +1,74 @@
-# \# Celebrare Photo Gallery
+# Celebrare Photo Gallery
 
-# 
+A responsive photo gallery built with **React, Vite, and Tailwind CSS** as part of the Celebrare Frontend Internship Assignment.
 
-# A responsive photo gallery application built using React, Vite, and Tailwind CSS as part of the Celebrare Frontend Internship Assignment.
+## Features
 
-# 
+- Fetches 30 photos from the Picsum Photos API.
+- Responsive photo grid layout.
+- Real-time search by author name.
+- Add and remove photos from favourites.
+- Favourites persist after page refresh using localStorage.
+- Loading spinner while fetching photos.
+- Error handling for API failures.
 
-# \## Features
+## Tech Stack
 
-# 
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- Picsum Photos API
+- React Hooks (`useState`, `useEffect`, `useReducer`, `useCallback`, `useMemo`)
 
-# \- Fetches 30 photos from the Picsum Photos API.
+## Project Structure
 
-# \- Responsive photo grid layout.
+```text
+src/
+├── components/
+│   ├── Gallery.jsx
+│   ├── LoadingSpinner.jsx
+│   └── PhotoCard.jsx
+├── hooks/
+│   └── useFetchPhotos.js
+├── reducers/
+│   └── favouritesReducer.js
+├── App.jsx
+└── index.css
+```
 
-# \- Search photos by author in real time.
+## Installation and Setup
 
-# \- Add and remove photos from favourites.
+1. Clone the repository:
 
-# \- Favourites persist after page refresh using localStorage.
+```bash
+git clone https://github.com/vishal-kharwar-08/celebrare-photo-gallery.git
+```
 
-# \- Loading spinner while fetching photos.
+2. Navigate to the project directory:
 
-# \- Error handling for failed API requests.
+```bash
+cd celebrare-photo-gallery
+```
 
-# 
+3. Install dependencies:
 
-# \## Technologies Used
+```bash
+npm install
+```
 
-# 
+4. Start the development server:
 
-# \- React
+```bash
+npm run dev
+```
 
-# \- Vite
+## Author
 
-# \- Tailwind CSS
+**Vishal Kharwar**
 
-# \- JavaScript
+GitHub: [vishal-kharwar-08](https://github.com/vishal-kharwar-08)
 
-# \- Picsum Photos API
+---
 
-# \- React Hooks: useState, useEffect, useReducer, useCallback, useMemo
-
-# \- localStorage
-
-# 
-
-# \## Installation
-
-# 
-
-# 1\. Clone the repository:
-
-# 
-
-# &#x20;  `git clone https://github.com/vishal-kharwar-08/celebrare-photo-gallery.git`
-
-# 
-
-# 2\. Open the project directory:
-
-# 
-
-# &#x20;  `cd celebrare-photo-gallery`
-
-# 
-
-# 3\. Install dependencies:
-
-# 
-
-# &#x20;  `npm install`
-
-# 
-
-# 4\. Start the development server:
-
-# 
-
-# &#x20;  `npm run dev`
-
-# 
-
-# \## Production Build
-
-# 
-
-# `npm run build`
-
-# 
-
-# \## Author
-
-# 
-
-# Vishal Kharwar
-
-# 
-
-# GitHub: https://github.com/vishal-kharwar-08
-
+Developed as part of the Celebrare Frontend Internship Assignment.
